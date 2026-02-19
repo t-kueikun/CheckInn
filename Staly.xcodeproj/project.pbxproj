@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A03EDE5E2F45A36100B9FD2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE5D2F45A36100B9FD2B /* FirebaseAnalytics */; };
+		A03EDE602F45A36100B9FD2B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE5F2F45A36100B9FD2B /* FirebaseAuth */; };
+		A03EDE622F45A36100B9FD2B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE612F45A36100B9FD2B /* FirebaseCore */; };
+		A03EDE642F45A36100B9FD2B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE632F45A36100B9FD2B /* FirebaseDatabase */; };
+		A03EDE662F45A36100B9FD2B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE652F45A36100B9FD2B /* FirebaseFirestore */; };
+		A03EDE682F45A36100B9FD2B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A03EDE672F45A36100B9FD2B /* FirebaseStorage */; };
+		A03EDE8A2F45B36800B9FD2B /* AuthKey_MF478488UX.p8 in Resources */ = {isa = PBXBuildFile; fileRef = A03EDE892F45B36800B9FD2B /* AuthKey_MF478488UX.p8 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A03EDE3A2F459D4900B9FD2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,7 @@
 		A03EDE2C2F459D4800B9FD2B /* Staly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Staly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03EDE392F459D4900B9FD2B /* StalyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StalyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03EDE432F459D4900B9FD2B /* StalyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StalyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03EDE892F45B36800B9FD2B /* AuthKey_MF478488UX.p8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthKey_MF478488UX.p8; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +63,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03EDE5E2F45A36100B9FD2B /* FirebaseAnalytics in Frameworks */,
+				A03EDE622F45A36100B9FD2B /* FirebaseCore in Frameworks */,
+				A03EDE642F45A36100B9FD2B /* FirebaseDatabase in Frameworks */,
+				A03EDE662F45A36100B9FD2B /* FirebaseFirestore in Frameworks */,
+				A03EDE602F45A36100B9FD2B /* FirebaseAuth in Frameworks */,
+				A03EDE682F45A36100B9FD2B /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 				A03EDE3C2F459D4900B9FD2B /* StalyTests */,
 				A03EDE462F459D4900B9FD2B /* StalyUITests */,
 				A03EDE2D2F459D4800B9FD2B /* Products */,
+				A03EDE892F45B36800B9FD2B /* AuthKey_MF478488UX.p8 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +130,12 @@
 			);
 			name = Staly;
 			packageProductDependencies = (
+				A03EDE5D2F45A36100B9FD2B /* FirebaseAnalytics */,
+				A03EDE5F2F45A36100B9FD2B /* FirebaseAuth */,
+				A03EDE612F45A36100B9FD2B /* FirebaseCore */,
+				A03EDE632F45A36100B9FD2B /* FirebaseDatabase */,
+				A03EDE652F45A36100B9FD2B /* FirebaseFirestore */,
+				A03EDE672F45A36100B9FD2B /* FirebaseStorage */,
 			);
 			productName = Staly;
 			productReference = A03EDE2C2F459D4800B9FD2B /* Staly.app */;
@@ -195,6 +219,9 @@
 			);
 			mainGroup = A03EDE232F459D4800B9FD2B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A03EDE2D2F459D4800B9FD2B /* Products */;
 			projectDirPath = "";
@@ -212,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03EDE8A2F45B36800B9FD2B /* AuthKey_MF478488UX.p8 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,13 +421,16 @@
 		A03EDE4E2F459D4900B9FD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+					CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+					CODE_SIGN_ENTITLEMENTS = Staly/Staly.entitlements;
+					CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZK6WM2QU2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckInn;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,13 +456,16 @@
 		A03EDE4F2F459D4900B9FD2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+					CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+					CODE_SIGN_ENTITLEMENTS = Staly/Staly.entitlements;
+					CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZK6WM2QU2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckInn;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +612,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A03EDE5D2F45A36100B9FD2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A03EDE5F2F45A36100B9FD2B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A03EDE612F45A36100B9FD2B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		A03EDE632F45A36100B9FD2B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A03EDE652F45A36100B9FD2B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A03EDE672F45A36100B9FD2B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03EDE5C2F45A36100B9FD2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A03EDE242F459D4800B9FD2B /* Project object */;
 }
